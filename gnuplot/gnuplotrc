@@ -1,0 +1,87 @@
+### To find the location of configuration file, 
+### open gnuplot and type 'show loadpath'
+### Gnuplot version 5.0 intialization file
+### This file is loaded by gnuplot at the start of each run.
+### It is provided as a template, with all commands commented out.
+### Uncomment and customize lines for local use.
+### Any commands placed here will affect all users.
+### To customize gnuplot's initial state for an individual user,
+### place commands in a private file ~/.gnuplot instead.
+
+###
+### Language initialization
+###
+# set locale
+# set encoding locale
+
+###
+### Default line colors and repeat cycle
+###
+
+#set encoding utf8
+
+set key font ",20"
+set key left top
+set xlabel font "Times, 25"
+set ylabel font "Times, 25"
+set xtics font "Times, 18"
+set ytics font "Times, 18"
+
+
+set lmargin 12
+set bmargin 6
+set rmargin 3
+set tmargin 2
+
+set linetype 1 lc rgb "#E41A1C" pt 6 ps 1 lw 2 # red
+set linetype 2 lc rgb '#377EB8' pt 6 ps 1 lw 2 # blue
+set linetype 3 lc rgb '#4DAF4A' pt 6 ps 1 lw 2 # green
+set linetype 4 lc rgb '#984EA3' pt 6 ps 1 lw 2 # purple
+set linetype 5 lc rgb '#FF7F00' pt 6 ps 1 lw 2 # orange
+set linetype 6 lc rgb '#F781BF' pt 6 ps 1 lw 2 # pink
+set linetype 7 lc rgb '#A65628' pt 6 ps 1 lw 2 # brown
+set linetype 8 lc rgb '#FFFF33' pt 6 ps 1 lw 2 # yellow
+set linetype cycle 8
+
+###
+### Initialize the default loadpath for shared gnuplot scripts and data.
+### Please confirm that this path is correct before uncommented the line below.
+###
+# set loadpath "/usr/local/share/gnuplot/4.7/demo"
+
+###
+### Some commonly used functions that are not built in
+###
+# sinc(x) = sin(x)/x
+# rgb(r,g,b) = sprintf("#%06x",256.*256.*255.*r+256.*255.*g+255.*b)
+# hsv(h,s,v) = sprintf("#%06x",hsv2rgb(h,s,v))
+
+###
+### Other preferences
+###
+# set clip two
+
+# See https://github.com/Gnuplotting/gnuplot-palettes
+# Line styles (colorbrewer Set1)
+#set style line 1 lc rgb '#E41A1C' pt 1 ps 1 lt 1 lw 2 # red
+#set style line 2 lc rgb '#377EB8' pt 6 ps 1 lt 1 lw 2 # blue
+#set style line 3 lc rgb '#4DAF4A' pt 2 ps 1 lt 1 lw 2 # green
+#set style line 4 lc rgb '#984EA3' pt 3 ps 1 lt 1 lw 2 # purple
+#set style line 5 lc rgb '#FF7F00' pt 4 ps 1 lt 1 lw 2 # orange
+#set style line 6 lc rgb '#FFFF33' pt 5 ps 1 lt 1 lw 2 # yellow
+#set style line 7 lc rgb '#A65628' pt 7 ps 1 lt 1 lw 2 # brown
+#set style line 8 lc rgb '#F781BF' pt 8 ps 1 lt 1 lw 2 # pink
+# Palette
+#set palette maxcolors 8
+#set palette defined ( 0 '#E41A1C', 1 '#377EB8', 2 '#4DAF4A', 3 '#984EA3',\
+#4 '#FF7F00', 5 '#F781BF', 6 '#A65628', 7 '#FFFF33')
+
+# Standard border
+set style line 11 lc rgb '#808080' lt 1 lw 3
+#set border 0 back ls 11
+#set tics out nomirror
+
+# Standard grid
+set style line 12 lc rgb '#808080' lt 0 lw 0.1
+set grid back ls 12
+#unset grid
