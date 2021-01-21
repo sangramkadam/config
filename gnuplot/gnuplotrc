@@ -85,3 +85,14 @@ set style line 11 lc rgb '#808080' lt 1 lw 3
 set style line 12 lc rgb '#808080' lt 0 lw 0.1
 set grid back ls 12
 #unset grid
+#
+# Load color maps
+
+set loadpath '~/git/config/gnuplot/gnuplot-colorbrewer-master/diverging' \
+        '~/git/config/gnuplot/gnuplot-colorbrewer-master/sequential' \
+        '~/git/config/gnuplot/gnuplot-colorbrewer-master/qualitative' \
+
+
+
+
+
