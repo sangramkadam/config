@@ -1,5 +1,6 @@
 # config
 Configuration files
+
 .vim is configuration file for vim editor
 
 .vmdrc is configuration file for VMD
