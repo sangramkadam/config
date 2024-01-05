@@ -1,7 +1,7 @@
 # config
 Configuration files
 
-.vim is the configuration file for the Vim editor.
+.vimrc is the configuration file for the Vim editor.
 
 .vmdrc is the configuration file for VMD.
 
@@ -9,5 +9,6 @@ The Gnuplot directory contains the gnuplot configuration file and color scheme f
 
 To know the path of gnuplotrc file in your system, type following command in gnuplot: show loadpath
 
-	
-	Typically gnuplotrc is read from /usr/share/gnuplot/gnuplot/5.2
+	show loadpath
+ 
+Typically gnuplotrc is read from /usr/share/gnuplot/gnuplot/5.2
